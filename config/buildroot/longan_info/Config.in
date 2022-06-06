@@ -1,0 +1,6 @@
+config BR2_PACKAGE_LONGAN_INFO
+	bool "longan_info"
+	select BR2_PACKAGE_LIBSYS_INFO
+	help
+	  longan info
+

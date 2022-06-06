@@ -1,0 +1,5 @@
+config BR2_PACKAGE_LIBNATIVEPOWER
+	bool "libnativepower"
+	depends on BR2_PACKAGE_DBUS
+	help
+	  Libnativepower provides a set of power operation functions.

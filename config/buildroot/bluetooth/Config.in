@@ -1,0 +1,15 @@
+config BR2_PACKAGE_BLUETOOTH
+	bool "bluetooth support"
+	select BR2_PACKAGE_BLUEZ5_UTILS
+	help
+	  bluetooth .
+
+if BR2_PACKAGE_BLUETOOTH
+
+config BR2_PACKAGE_BLUETOOTH_REALTEK_RTL8723DS
+	bool "realtek rtl8723ds"
+
+config BR2_PACKAGE_BLUETOOTH_AMPAK
+	bool "ampak"
+
+endif

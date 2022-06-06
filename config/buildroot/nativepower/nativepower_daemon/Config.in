@@ -1,0 +1,14 @@
+config BR2_PACKAGE_NATIVEPOWER_DAEMON
+	bool "nativepower_daemon"
+	select BR2_PACKAGE_LIBSUSPEND
+	select BR2_PACKAGE_LIBSCENEMANAGER
+	help
+	  nativepower_daemon is a daemon of nativepower.
+
+if BR2_PACKAGE_NATIVEPOWER_DAEMON
+
+config BR2_NATIVEPOWER_USE_DBUS
+	bool "use dbus"
+	depends on BR2_PACKAGE_DBUS
+
+endif

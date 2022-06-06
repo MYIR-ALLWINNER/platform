@@ -1,0 +1,3 @@
+# wifi-manager
+source "../../platform/config/buildroot/wifi-manager/libwifimg/Config.in"
+source "../../platform/config/buildroot/wifi-manager/wifi-manager-demo/Config.in"

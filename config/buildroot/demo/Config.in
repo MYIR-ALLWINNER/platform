@@ -1,0 +1,5 @@
+config BR2_PACKAGE_DEMO
+	bool "demo"
+	help
+	  demo for test
+

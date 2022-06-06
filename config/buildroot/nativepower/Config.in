@@ -1,0 +1,6 @@
+# nativepower
+source "../../platform/config/buildroot/nativepower/libsuspend/Config.in"
+source "../../platform/config/buildroot/nativepower/libnativepower/Config.in"
+source "../../platform/config/buildroot/nativepower/libscenemanager/Config.in"
+source "../../platform/config/buildroot/nativepower/nativepower_daemon/Config.in"
+source "../../platform/config/buildroot/nativepower/nativepower_utils/Config.in"

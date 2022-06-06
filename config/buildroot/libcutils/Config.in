@@ -1,0 +1,7 @@
+config BR2_PACKAGE_LIBCUTILS
+	bool "libcutils"
+	help
+		Libcutils provides a self-contained set of fundamental routines which are
+		essential to basically any Unix utility or daemon application written in C. The
+		library provides fundamental data structures such as lists, hash-maps, strings
+		and parsing functions for JSON or the typical dot-file based configuration data.

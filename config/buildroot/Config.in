@@ -1,0 +1,124 @@
+menu "allwinner platform private package select"
+
+config BR2_AW_GSTREAMER1
+	bool "allwinner gstreamer1 package"
+	help
+	 select whether to use the allwinner private
+	 gstreamer1 package
+
+if BR2_AW_GSTREAMER1
+config BR2_AW_GST_LIBAV
+	bool "allwinner gstreamer libav package"
+    default y
+	help
+	 select whether to use the allwinner private
+	 gstreamer libav package
+
+config BR2_AW_GST_OMX
+	bool "allwinner gstreamer omx package"
+    default y
+	help
+	 select whether to use the allwinner private
+	 gstreamer libomx package
+
+config BR2_AW_GST_BASE
+	bool "allwinner gstreamer base package"
+    default y
+	help
+	 select whether to use the allwinner private
+	 gstreamer base package
+
+config BR2_AW_GST_BAD
+	bool "allwinner gstreamer bad package"
+    default y
+	help
+	 select whether to use the allwinner private
+	 gstreamer bad package
+
+config BR2_AW_GST_GOOD
+	bool "allwinner gstreamer good package"
+    default y
+	help
+	 select whether to use the allwinner private
+	 gstreamer good package
+
+config BR2_AW_GST_UGLY
+	bool "allwinner gstreamer ugly package"
+    default y
+	help
+	 select whether to use the allwinner private
+	 gstreamer ugly package
+endif
+
+config BR2_AW_WAYLAND
+	bool "allwinner wayland package"
+	default n
+	help
+	 select whether to use the allwinner private
+	 wayland package
+
+config BR2_AW_WAYLAND_IVI_EXTENSION
+	bool "allwinner wayland-ivi-extension package"
+	default n
+	help
+	 select whether to use the allwinner private
+	 wayland-ivi-extension package
+
+config BR2_AW_WAYLAND_PROTOCOLS
+	bool "allwinner wayland-protocols package"
+	default n
+	help
+	 select whether to use the allwinner private
+	 wayland-protocols package
+
+config BR2_AW_WESTON
+	bool "allwinner weston package"
+	default n
+	help
+	 select whether to use the allwinner private
+	 weston package
+
+config BR2_AW_MESA3D
+	bool "allwinner mesa3d package"
+	default n
+	help
+	 select whether to use the allwinner private
+	 mesd3d package
+
+source "../../platform/config/buildroot/demo/Config.in"
+source "../../platform/config/buildroot/mtop/Config.in"
+source "../../platform/config/buildroot/longan_info/Config.in"
+
+source "../../platform/config/buildroot/libcedarc/Config.in"
+source "../../platform/config/buildroot/cedarx/Config.in"
+source "../../platform/config/buildroot/boot-play/Config.in"
+source "../../platform/config/buildroot/mediaplayer/Config.in"
+
+menu "nativepower"
+source "../../platform/config/buildroot/nativepower/Config.in"
+endmenu
+
+menu "ota"
+source "../../platform/config/buildroot/ota/Config.in"
+endmenu
+
+source "../../platform/config/buildroot/libawresample/Config.in"
+source "../../platform/config/buildroot/libspeex-lite/Config.in"
+source "../../platform/config/buildroot/resample/Config.in"
+source "../../platform/config/buildroot/libcutils/Config.in"
+source "../../platform/config/buildroot/libsys_info/Config.in"
+
+source "../../platform/config/buildroot/mtp/Config.in"
+source "../../platform/config/buildroot/logwrapper/Config.in"
+
+menu "wifimanager"
+source "../../platform/config/buildroot/wifi-manager/Config.in"
+endmenu
+
+#menu "smartlinkd"
+source "../../platform/config/buildroot/smartlinkd/Config.in"
+#endmenu
+
+source "../../platform/config/buildroot/bluetooth/Config.in"
+
+endmenu

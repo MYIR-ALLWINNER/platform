@@ -1,0 +1,6 @@
+config BR2_PACKAGE_NATIVEPOWER_UTILS
+	bool "nativepower_utils"
+	select BR2_PACKAGE_LIBSUSPEND
+	select BR2_PACKAGE_LIBNATIVEPOWER
+	help
+	  nativepower_utils is a demo app for no dbus.

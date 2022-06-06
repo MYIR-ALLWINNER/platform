@@ -1,0 +1,4 @@
+config BR2_PACKAGE_MISC_UPGRADE
+	bool "misc-upgrade"
+	help
+	  misc upgrade.

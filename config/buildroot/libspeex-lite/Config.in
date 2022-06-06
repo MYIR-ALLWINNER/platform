@@ -1,0 +1,4 @@
+config BR2_PACKAGE_LIBSPEEX_LITE
+	bool "libspeex-lite"
+	help
+		libspeex-lite.

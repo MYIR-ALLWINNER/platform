@@ -1,0 +1,4 @@
+config BR2_PACKAGE_LIBSYS_INFO
+	bool "libsys_info"
+	help
+	  system info.

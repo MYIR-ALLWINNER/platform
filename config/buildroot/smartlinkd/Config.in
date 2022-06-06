@@ -1,0 +1,31 @@
+config BR2_PACKAGE_SMARTLINKD
+	bool "smartlinkd"
+	help
+	  smartlinkd.
+
+if BR2_PACKAGE_SMARTLINKD
+
+config BR2_PACKAGE_LIBSMARTLINKD_CLIENT
+	bool "libsmartlinkd_client"
+	help
+	  smartlinkd libclient.
+
+config BR2_PACKAGE_SMARTLINKD_SERVER
+	bool "smartlinkd server"
+	select BR2_PACKAGE_LIBSMARTLINKD_CLIENT
+	help
+	  smartlinkd server.
+
+config BR2_PACKAGE_SMARTLINKD_SOUNDWAVE
+	bool "smartlinkd soundwave"
+	select BR2_PACKAGE_LIBSMARTLINKD_CLIENT
+	help
+	  smartlinkd soundwave.
+
+config BR2_PACKAGE_SMARTLINKD_XR819_SMARTCONFIG
+	bool "xr819 smartconfig"
+	select BR2_PACKAGE_LIBSMARTLINKD_CLIENT
+	help
+	  xr819 smartconfig.
+
+endif
