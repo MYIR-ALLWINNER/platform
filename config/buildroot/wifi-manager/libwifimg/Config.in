@@ -1,0 +1,4 @@
+config BR2_PACKAGE_LIBWIFIMG
+	bool "libwifimg"
+	help
+	  libwifimg use in wifi station mode.

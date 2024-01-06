@@ -1,0 +1,6 @@
+config BR2_PACKAGE_LIBSUSPEND
+	bool "libsuspend"
+	help
+	  libsuspend is a colletction of autosuspend operation functions.
+
+

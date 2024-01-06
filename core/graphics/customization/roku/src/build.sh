@@ -1,0 +1,3 @@
+#~/workstation/compile_tool/toolchain/bin/arm-roku-linux-gnueabi-gcc  egl_api.c gl2_api.c  gpu_loader.c -I ../include  -I /usr/include/   -I ../include/ -I . -I ../include/khronos/original/   -fPIC -shared -o libaw_opengles.so
+/home/dengbo/workspace/gpu/gpu-new/gpu-src/tools/toolchains/arm-openwrt-linux-gnueabi/bin/arm-openwrt-linux-gnueabi-gcc  egl_api.c gl2_api.c  gpu_loader.c -I ../include  -I /usr/include/   -I ../include/ -I . -I ../include/khronos/original/ -lpthread  -fPIC -shared -o libaw_opengles.so
+#/home/dengbo/workspace/gpu/gpu-new/gpu-src/tools/toolchains/arm-roku-linux-gnueabi/bin/arm-roku-linux-gnueabi-gcc  -g egl_api.c gl2_api.c  gpu_loader.c -I ../include  -I ../include/ -I . -I ../include/khronos/original/   -fPIC -shared -o libaw_opengles.so

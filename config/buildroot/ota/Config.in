@@ -1,0 +1,4 @@
+# ota
+source "../../platform/config/buildroot/ota/misc-upgrade/Config.in"
+source "../../platform/config/buildroot/ota/ota-burnboot/Config.in"
+source "../../platform/config/buildroot/ota/ota-upgrade/Config.in"

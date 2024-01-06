@@ -1,0 +1,4 @@
+config BR2_PACKAGE_RESAMPLE
+	bool "resample"
+	help
+		resample.

@@ -1,0 +1,10 @@
+config BR2_PACKAGE_MEDIAPLAYER
+	bool "mediaplayer package"
+	select BR2_PACKAGE_LIBCEDARC
+	select BR2_PACKAGE_CEDARX
+	select BR2_PACKAGE_LIBDRM
+	select BR2_PACKAGE_WESTON
+	select BR2_PACKAGE_WAYLAND_IVI_EXTENSION
+	help
+	  mediaplayer package
+

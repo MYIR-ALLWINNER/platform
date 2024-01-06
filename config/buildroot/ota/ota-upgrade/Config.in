@@ -1,0 +1,4 @@
+config BR2_PACKAGE_OTA_UPGRADE
+	bool "ota-upgrade"
+	help
+	  ota upgrade partition.

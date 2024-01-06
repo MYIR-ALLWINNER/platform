@@ -1,0 +1,6 @@
+config BR2_PACKAGE_BOOT_PLAY
+	bool "boot-play package"
+	select BR2_PACKAGE_LIBUBOX
+	help
+	  boot-play package
+

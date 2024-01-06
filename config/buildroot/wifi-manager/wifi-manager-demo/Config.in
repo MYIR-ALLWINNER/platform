@@ -1,0 +1,19 @@
+#config BR2_PACKAGE_WIFI_MANAGER_DEMO
+#	bool "wifi-manager-demo"
+#        depends on BR2_PACKAGE_WIFI_MANAGER
+#	help
+#	  wifi manager demo.
+#
+#if BR2_PACKAGE_WIFI_MANAGER_DEMO
+#
+#config BR2_PACKAGE_WIFI_SCAN_RESULTS
+#	bool "wifi scan results"
+#	select BR2_PACKAGE_WPA_SUPPLICANT
+#
+#endif
+
+config BR2_PACKAGE_WIFI_MANAGER_DEMO
+	bool "wifi-manager-demo"
+	select BR2_PACKAGE_LIBWIFIMG
+	help
+	  wifi manager demo.

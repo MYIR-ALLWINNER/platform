@@ -1,0 +1,4 @@
+config BR2_PACKAGE_LIBSCENEMANAGER
+	bool "libscenemanager"
+	help
+	  libscenemanager provides a set of scene manager functions.
